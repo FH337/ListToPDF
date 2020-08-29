@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/finalprint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/finalprint2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="360dp"
+            android:layout_height="17dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_style"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/listFinal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cek"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TANGGAL"
+
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="KETERANGAN"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MUTASI"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="81dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bcalogo" />
+
+        <TextView
+            android:id="@+id/kop"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            android:text="MUTASI REKENING"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/cek"
+            android:layout_width="359dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border_style"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:text="CATATAN:"
+                android:textSize="8sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="358dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="\u2022 Apabila nasabah tidak melakukan sanggahan atas Laporan Mutasi Rekening ini sampai dengan akhir bulan berikutnya, nasabah dianggap telah menyetujui segala data yang tercantum pada Laporan Mutasi Rekening ini."
+                    android:textSize="8sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="\u2022 BCA berhak setiap saat melakukan koreksi apabila ada kesalahan pada Laporan Mutasi Rekening"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="285dp"
+            android:layout_height="95dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/border_style"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:text="NO. REKENING         :"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6970123245"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="276dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NAMA                        :"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RANDY RENALDA N."
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="276dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:alwaysDrawnWithCache="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="17dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HALAMAN                :"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/limit"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1 / 4"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="276dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="JENIS TRANSAKSI   :"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TRANSFER QR OUT"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="276dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" PERIODE                  :"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="01 JUL - 04 JUL 2018"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="276dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MATA UANG            :"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="IDR"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listFinal"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cek" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
